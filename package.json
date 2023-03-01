@@ -1,0 +1,25 @@
+{
+  "name": "nft-registry",
+  "version": "1.0.0",
+  "description": "Cross-Chain NFT Mapping Registry Contract",
+  "main": "index.ts",
+  "scripts": {
+    "compile": "hardhat compile",
+    "clean": "hardhat clean",
+    "test": "hardhat test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comoco-labs/nft-registry.git"
+  },
+  "author": "Comoco Labs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/comoco-labs/nft-registry/issues"
+  },
+  "homepage": "https://github.com/comoco-labs/nft-registry#readme",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "hardhat": "^2.12.0"
+  }
+}
