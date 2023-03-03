@@ -20,6 +20,7 @@
   "homepage": "https://github.com/comoco-labs/nft-registry#readme",
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "dotenv": "^16.0.0",
     "hardhat": "^2.12.0"
   }
 }
