@@ -7,8 +7,8 @@ struct Chain {
     uint256 id;
 }
 
-interface IOwner {
-    function owner() external view returns (address owner);
+interface IERC173 {
+    function owner() external view returns (address);
 }
 
 contract TokenRegistry {
@@ -17,7 +17,7 @@ contract TokenRegistry {
 
     event SecondaryTokenAddressChanged(
         address indexed primaryAddr,
-        Chain indexed secondaryChain,
+        Chain secondaryChain,
         address indexed newSecondaryAddr
     );
 
@@ -27,7 +27,7 @@ contract TokenRegistry {
     }
 
     modifier onlyContractOwner(address addr) {
-        require(msg.sender == IOwner(addr).owner());
+        require(msg.sender == IERC173(addr).owner(), "Unauthorized request");
         _;
     }
 
