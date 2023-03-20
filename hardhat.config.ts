@@ -11,8 +11,7 @@ const config: HardhatUserConfig = {
       url: "http://127.0.0.1:8545"
     },
     goerli: {
-      url: `https://eth-goerli.g.alchemy.com/v2/${process.env.ALCHEMY_API_KEY}`,
-      accounts: [`0x${process.env.ACCOUNT_PRIVATE_KEY}`]
+      url: `https://eth-goerli.g.alchemy.com/v2/${process.env.ALCHEMY_API_KEY}`
     }
   },
   etherscan: {
